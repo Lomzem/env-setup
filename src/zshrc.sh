@@ -37,8 +37,6 @@ autoload -Uz compinit && compinit
 
 compdef _dirs ls
 
-source <(fzf --zsh)
-
 HISTSIZE=5000
 HISTFILE=~/.cache/zsh/history
 SAVEHIST=$HISTSIZE
