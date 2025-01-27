@@ -2,6 +2,8 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 
+export PATH="$PATH:/opt/nvim/"
+
 export ZINIT_HOME="$HOME/.local/share/zinit/zinit.git"
 
 if [ ! -d "$ZINIT_HOME" ]; then
