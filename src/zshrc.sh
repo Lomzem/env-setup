@@ -50,6 +50,7 @@ setopt hist_ignore_dups
 setopt hist_find_no_dups
 
 alias so="source ~/.zshrc"
+alias ls="exa"
 
 function runnvim() { nvim }
 zle -N runnvim
@@ -60,5 +61,7 @@ bindkey "^[j" down-history
 
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
+
+PROMPT="%F{1}[%D{%H:%M:%S}]%b %F{4}%1~%f %F{2}$%f "
 
 zinit cdreplay -q
